@@ -1,2 +1,2 @@
 # jQueryNavbar
-You can try my demo []( https://samersenbol.github.io/jQueryNavbar/)!
+You can try my demo [here]( https://samersenbol.github.io/jQueryNavbar/)!
