@@ -1,0 +1,30 @@
+/* Start Global rules */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* End Global rules */
+
+/* Start Header */
+.navbar{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color: #EEE;
+    text-align: center;
+}
+.navbar li {
+    display: inline-block;
+    padding: 10px;
+}
+/* End Header */
+
+/* Start sections */
+.block{
+
+    height: 1200px;
+}
+
+/* End sections */
