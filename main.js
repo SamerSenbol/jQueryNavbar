@@ -22,9 +22,11 @@ $(function(){
         $(this).addClass('active').parent().siblings().find('a').removeClass('active');
     })
 
-    // Sync Navbar Links With Sections
+   
 
     $(window).scroll(function(){
+
+         // Sync Navbar Links With Sections
 
         $('.block').each(function(){
             if ($(window).scrollTop() > $(this).offset().top){
@@ -33,7 +35,16 @@ $(function(){
                 $('.navbar a').removeClass('active');
                 $('.navbar li a[data-scroll="'+blockID +'"]').addClass('active');
             }
-        })
-       
+        });
+        // Scroll To Top Button 
+
+    if ($(window).scrollTop() >= 1000){
+
+        $('.scroll-to-top').fadeIn(400);
+    }else{
+        $('.scroll-to-top').fadeOut(400);
+    }
     });
+
+    
 });
