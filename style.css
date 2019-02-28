@@ -4,6 +4,10 @@
     margin: 0;
     padding: 0;
 }
+
+body{
+    font-family: Tahoma, Arial
+}
 /* End Global rules */
 
 /* Start Header */
@@ -12,13 +16,17 @@
     margin: 0;
     padding: 0;
     background-color: #333;
-    color: #EEE;
     text-align: center;
 }
 .navbar li {
     display: inline-block;
     padding: 10px;
 }
+.navbar li a {
+    color: #EEE;
+    text-decoration: none;
+}
+
 /* End Header */
 
 /* Start sections */
