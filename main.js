@@ -37,14 +37,13 @@ $(function(){
             }
         });
         // Scroll To Top Button 
+        var scrollToTop = $('.scroll-to-top');
 
-    if ($(window).scrollTop() >= 1000){
+        if ($(window).scrollTop() >= 1000){
 
-        $('.scroll-to-top').fadeIn(400);
-    }else{
-        $('.scroll-to-top').fadeOut(400);
-    }
+        scrollToTop.fadeIn(400);
+        }else{
+        scrollToTop.fadeOut(400);
+        }
     });
-
-    
 });
