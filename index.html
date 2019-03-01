@@ -23,7 +23,8 @@
     <!-- Start sections -->
     <div id="home" class="block">
         <h2>Home</h2>
-        <span class="show-popup">Show Popup</span>
+        <span class="show-popup" data-popup=".first-popup">Show 1set Popup</span>
+        <span class="show-popup" data-popup=".second-popup">Show 2nd Popup</span>
     </div>
     <div id="about-us" class="block">
         <h2>About Us</h2>
@@ -50,9 +51,19 @@
     <!--End Scroll To Top-->
 
     <!--Start Popup-->
-    <div class="popup">
+    <div class="popup first-popup">
         <div class="inner">
-           <h2>This is Popup</h2><br>
+           <h2>First Popup</h2><br>
+            <p>  
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            corrupti magnam sequi ad!
+            </p>
+            <button class="close">Close</button> 
+        </div>
+    </div>
+    <div class="popup second-popup">
+        <div class="inner">
+           <h2>Second Popup</h2><br>
             <p>  
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             corrupti magnam sequi ad!

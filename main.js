@@ -58,7 +58,7 @@ $(function(){
 
     // Popup
     $('.show-popup').click(function(){
-        $('.popup').fadeIn();
+        $($(this).data('popup')).fadeIn();
     });
 
     $('.popup').click(function(){
@@ -69,8 +69,15 @@ $(function(){
        e.stopPropagation();
     });
 
-    $('.popup .close').click(function(){
-       $('.popup').fadeOut();
+    $('.popup .close').click(function(e){
+        e.preventDefault();
+       $(this).parentsUntil('.popup').parent().fadeOut();
+    });
+
+    $(document).keydown(function(e){
+        if(e.keyCode == 27){
+            $('.popup').fadeOut();
+        }
     });
 
 });
