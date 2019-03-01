@@ -22,8 +22,6 @@ $(function(){
         $(this).addClass('active').parent().siblings().find('a').removeClass('active');
     })
 
-   
-
     $(window).scroll(function(){
 
          // Sync Navbar Links With Sections
@@ -41,9 +39,21 @@ $(function(){
 
         if ($(window).scrollTop() >= 1000){
 
-        scrollToTop.fadeIn(400);
+            if(scrollToTop.is(':hidden')){
+                scrollToTop.fadeIn(400);
+            }
+
         }else{
         scrollToTop.fadeOut(400);
         }
     });
+
+    // Click On Scroll To Top To Go Up
+    $('.scroll-to-top').click(function(event){
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: 0
+            },1000);
+
+    })
 });
