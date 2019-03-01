@@ -60,3 +60,46 @@ body{
 }
 
 /* End sections */
+
+/* Start Popup*/
+
+.popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index: 9999;
+    background-color: rgba(187, 187, 187, 0.8);
+}
+.popup .inner{
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    padding: 20px;
+    width: 300px;
+    height: 125px;
+    left: 50%;
+    position: fixed;
+    margin-left: -150px;
+    top: 50%;
+    margin-top: -125px;
+    border-radius: 5px;
+}
+
+.popup .inner p{
+    color: #AAA;
+    line-height: 1.6
+}
+
+.popup .inner button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 2px 8px;
+    background-color: #EEE;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    cursor:pointer;
+}
+/* End Popup*/
