@@ -72,6 +72,7 @@ body{
     text-align: center;
     z-index: 9999;
     background-color: rgba(187, 187, 187, 0.8);
+    display: none;
 }
 .popup .inner{
     background-color: #FFF;
@@ -101,5 +102,17 @@ body{
     border: 1px solid #CCC;
     border-radius: 4px;
     cursor:pointer;
+}
+.show-popup {
+    cursor: pointer;
+    display: block; 
+    text-align: center;
+    margin: 20px;
+    background-color: #fff;
+    width: 120px;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #928440;
 }
 /* End Popup*/
