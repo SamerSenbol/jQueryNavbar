@@ -189,7 +189,7 @@ cursor: pointer;
 
 /* Start Gallery*/
 .gallery{
-    width: 800px;
+    width: 75%;
     margin: auto;
     border: 1px solid #CCC;
     padding: 3px;
