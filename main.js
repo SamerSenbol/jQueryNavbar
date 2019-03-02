@@ -99,11 +99,11 @@ $(function(){
             }, 1000);
 
             $('body').animate({
-                paddingLeft: '240px'
+                paddingLeft: '220px'
             }, 1000);
         }else{
             $(this).parent('.fixed-menu').animate({
-                left: '-240px'
+                left: '-220px'
             }, 1000);
             $('body').animate({
                 paddingLeft: 0
