@@ -49,6 +49,35 @@ body{
 
 /* End Header */
 
+/*Start Fixed Menu*/
+
+.fixed-menu{
+background-color: #333;
+color: #EEE;
+padding: 10px;
+position: fixed;
+left: -240px;
+top: 0;
+height: 100%;
+width: 220px;
+z-index: 9999;
+
+}
+
+.fixed-menu .fa-cog {
+position: absolute;
+right:-30px;
+top: 90px;
+background-color: #333;
+width: 30px;
+height: 30px;
+line-height:30px;
+text-align: center;
+border-radius: 0 10px 10px 0; 
+cursor: pointer;
+}
+/*End Fixed Menu*/
+
 /* Start sections */
 .block{
 

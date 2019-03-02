@@ -90,4 +90,25 @@ $(function(){
 
     });
 
+    // Fixed Menu
+    $('.fixed-menu .fa-cog').on('click',function(){
+        $(this).parent('.fixed-menu').toggleClass('is-visible');
+        if ($(this).parent('.fixed-menu').hasClass('is-visible')){
+            $(this).parent('.fixed-menu').animate({
+                left: 0
+            }, 1000);
+
+            $('body').animate({
+                paddingLeft: '240px'
+            }, 1000);
+        }else{
+            $(this).parent('.fixed-menu').animate({
+                left: '-240px'
+            }, 1000);
+            $('body').animate({
+                paddingLeft: 0
+            }, 1000);
+        }
+    });
+
 });
