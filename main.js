@@ -80,4 +80,14 @@ $(function(){
         }
     });
 
+    // Animated Progress
+    $('.animated-progress span').each(function(){
+        $(this).animate({
+            width: $(this).attr('data-progress') + '%'
+        }, 1000, function(){
+            $(this).text($(this).attr('data-progress') + '%');
+        })
+
+    });
+
 });

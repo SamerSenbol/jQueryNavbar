@@ -116,3 +116,40 @@ body{
     color: #928440;
 }
 /* End Popup*/
+
+/* Start Progres Bar*/
+.animated-progress{
+    width: 300px;
+    height: 30px;
+    border-radius:  5px;
+    background-color: #16c143;
+    margin: 20px 10px;
+    border: 1px solid #CCC;
+    background-color: #f6f6f6;
+    overflow: hidden;
+}
+
+.animated-progress span {
+    height: 100%;
+    width: 0;
+    display: block;
+    width: 45% ; 
+    color:#fff ; 
+    line-height:30px; 
+    text-indent:8px;
+}
+
+.progress-blue span {
+    background-color: #3498db;
+}
+
+.progress-red span {
+    background-color: #e74c3c;
+}
+.progress-green span {
+    background-color: #16a085;
+}
+.progress-purple span {
+    background-color: #8a44ad;
+}
+/* End Progres Bar*/
