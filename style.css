@@ -225,7 +225,6 @@ cursor: pointer;
 }
 
 .gallery .thumbnails img {
-    width: 19.6%;
     float: left;
     border: 3px solid #BBB;
     cursor: pointer;
