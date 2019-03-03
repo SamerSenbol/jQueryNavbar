@@ -112,6 +112,15 @@ $(function(){
     });
     // Thumbnails Gallery
 
+    var numOfThumbnails = $('.thumbnails').children().length,
+    marginBetweenThumbnails = '.5',
+    totalMarginBetweenThumbnails = (numOfThumbnails - 1) * marginBetweenThumbnails,
+    thumbnailWidth = ( 100 - totalMarginBetweenThumbnails )/numOfThumbnails;
+    $('.thumbnails img').css({
+        'width':thumbnailWidth + '%',
+        'margin-right':marginBetweenThumbnails + '%'
+    });
+
     $('.thumbnails img').on('click',function(){
         $(this).addClass('selected').siblings().removeClass('selected');
         $('.master-img img').hide().attr('src',$(this).attr('src')).fadeIn(300);

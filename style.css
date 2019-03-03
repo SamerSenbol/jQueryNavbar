@@ -236,8 +236,8 @@ cursor: pointer;
     opacity: .6;
 }
 
-.gallery .thumbnails img:not(:last-child) {
-   margin-right: 0.5%;
+.gallery .thumbnails img:last-child {
+   margin-right: 0 !important;
 }
 
 .gallery .thumbnails img.selected {
