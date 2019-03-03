@@ -110,5 +110,12 @@ $(function(){
             }, 1000);
         }
     });
+    // Thumbnails Gallery
 
+    $('.thumbnails img').on('click',function(){
+        $(this).addClass('selected').siblings().removeClass('selected');
+        $('.master-img img').hide().attr('src',$(this).attr('src')).fadeIn(300);
+    });
+        
+    
 });

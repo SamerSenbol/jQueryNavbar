@@ -209,6 +209,11 @@ cursor: pointer;
     float: left;
     border: 3px solid #BBB;
     cursor: pointer;
+    -webkit-transition: all .4s ease-in-out;
+    -Moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    opacity: .6;
 }
 
 .gallery .thumbnails img:not(:last-child) {
@@ -217,5 +222,6 @@ cursor: pointer;
 
 .gallery .thumbnails img.selected {
     border: 3px solid #ad1f10;
+    opacity: 1;
 }
 /* End Gallery*/
