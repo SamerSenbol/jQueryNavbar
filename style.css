@@ -200,6 +200,26 @@ cursor: pointer;
     max-width: 100%;
 }
 
+.gallery .master-img {
+    position: relative;
+}
+
+.gallery .master-img i {
+    padding: 10px 5px;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.gallery .master-img .fa-chevron-left {
+    left: 0
+}
+
+.gallery .master-img .fa-chevron-right {
+    right: 0
+}
+
 .gallery .thumbnails {
     overflow: hidden;
 }

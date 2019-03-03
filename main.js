@@ -117,5 +117,22 @@ $(function(){
         $('.master-img img').hide().attr('src',$(this).attr('src')).fadeIn(300);
     });
         
-    
+    $('.master-img .fa-chevron-right').on('click',function(){
+        if($('.thumbnails .selected').is(':last-child')){
+            $('.thumbnails img').eq(0).click();
+
+        }else{
+            $('.thumbnails .selected').next().click();
+        }
+        
+    });
+
+    $('.master-img .fa-chevron-left').on('click',function(){
+        if($('.thumbnails .selected').is(':first-child')){
+            $('.thumbnails img:last').click();
+
+        }else{
+            $('.thumbnails .selected').prev().click();
+        }
+    });
 });
