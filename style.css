@@ -1,5 +1,4 @@
 /* Start Global rules */
-
 *{
     margin: 0;
     padding: 0;
@@ -50,11 +49,9 @@ body{
 .navbar li a.active {
     color: #ffea00;
 }
-
 /* End Header */
 
 /*Start Fixed Menu*/
-
 .fixed-menu{
 background-color: #333;
 color: #EEE;
@@ -91,11 +88,9 @@ cursor: pointer;
     padding: 60px 0;
     text-align: center;
 }
-
 /* End sections */
 
 /* Start Popup*/
-
 .popup{
     position: fixed;
     top: 0;
@@ -248,3 +243,43 @@ cursor: pointer;
     opacity: 1;
 }
 /* End Gallery*/
+
+/* Start Prodcuts*/
+.products{
+    width:800px;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+.products .product {
+    width: 49%;
+    float: left;
+    background-color: #FFF;
+    border:1px solid  #CCC;
+    padding: 10px;
+}
+
+.products .product:first-child {
+    margin-right: 1%
+}
+
+.products .product .date {
+    display: block;
+    color: #888;
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.products .product i {
+    display: block;
+    padding: 10px;
+    background-color: #EEE;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.products .product .description {
+    margin: 10px 0;
+    display: none;
+}
+/* End Prodcuts*/

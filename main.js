@@ -1,11 +1,9 @@
 /* global console, $ */
-
 $(function(){
 
     'use strict';
 
     //Calculate body Padding Top Depend On Navbar Height
-
     $('body').css('paddingTop', $('.navbar').innerHeight());
 
     // Smoothly Scroll To Element
@@ -17,7 +15,6 @@ $(function(){
     });
 
     // Add Active Class On Navbar Link and Remove From Siblings
-
     $('.navbar li a').click(function(){
         $(this).addClass('active').parent().siblings().find('a').removeClass('active');
     })
@@ -110,8 +107,8 @@ $(function(){
             }, 1000);
         }
     });
-    // Thumbnails Gallery
 
+    // Thumbnails Gallery
     var numOfThumbnails = $('.thumbnails').children().length,
     marginBetweenThumbnails = '.5',
     totalMarginBetweenThumbnails = (numOfThumbnails - 1) * marginBetweenThumbnails,
@@ -143,5 +140,10 @@ $(function(){
         }else{
             $('.thumbnails .selected').prev().click();
         }
+    });
+
+    // Toggel Product Description 
+    $('.products .product i').on('click',function(){
+        $(this).toggleClass('fa-plus fa-minus').next('p').slideToggle();
     });
 });
